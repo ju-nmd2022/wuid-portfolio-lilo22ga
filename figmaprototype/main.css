@@ -30,6 +30,7 @@ h1,
 .item4 {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .paragraph1 {
