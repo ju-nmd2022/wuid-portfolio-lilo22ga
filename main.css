@@ -36,20 +36,13 @@ h2 {
     "footer footer footer";
 }
 
-.sectionheader {
-  grid-column: 1 / 3;
-  grid-row: 1;
-}
-
 .sectionhero {
-  grid-column: 1 / 3;
-  grid-row: 2;
   display: flex;
   flex-direction: column;
   padding-bottom: 3%;
   padding-top: 2%;
   padding-left: 1%;
-  padding-right: 87%;
+  padding-right: 1%;
   margin-bottom: 2%;
   background-color: lightcoral;
 }
@@ -95,15 +88,65 @@ h2 {
 .onlylink,
 .onlyotherlink {
   font-weight: bold;
-  margin-top: 10%;
+  font-size: x-large;
+  color: lemonchiffon;
+}
+
+.onlyotherlink {
+  margin-top: 2%;
+  margin-bottom: 1%;
+  animation-name: secondslide;
+  animation-duration: 6s;
+  width: 100%;
+  border-bottom: 1px solid lemonchiffon;
+  text-decoration: none;
+}
+
+@keyframes secondslide {
+  from {
+    margin-left: 99%;
+    font-size: smaller;
+  }
+  to {
+    margin-left: 0%;
+    font-size: x-large;
+  }
 }
 
 footer {
   margin-top: 1%;
 }
 
-.herotext,
-.onlylink,
-.onlyotherlink {
-  color: lemonchiffon;
+.onlylink {
+  width: 100%;
+  margin-top: 1%;
+  animation-name: firstslide;
+  animation-duration: 4s;
+  border-bottom: 1px solid lemonchiffon;
+  text-decoration: none;
+}
+
+@keyframes firstslide {
+  from {
+    margin-left: 99%;
+    font-size: smaller;
+  }
+  to {
+    margin-left: 0%;
+    font-size: x-large;
+  }
+}
+
+.sectionhero {
+  animation-name: heroslide;
+  animation-duration: 3s;
+}
+
+@keyframes heroslide {
+  from {
+    margin-right: 99%;
+  }
+  to {
+    padding-left: 1%;
+  }
 }
